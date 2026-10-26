@@ -1,4 +1,4 @@
-# Barbería Don Ramón · Turnos por WhatsApp
+# Barbería Rivadavia · Turnos por WhatsApp
 
 Sitio de ejemplo de una barbería de barrio (ficticia, en Bahía Blanca). El cliente elige servicio, barbero, día y horario, escribe su nombre y toca "Pedir turno por WhatsApp": se abre WhatsApp con el mensaje armado. Si falta algún dato, el botón dice cuál.
 

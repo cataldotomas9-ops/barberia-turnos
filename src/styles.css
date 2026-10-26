@@ -78,7 +78,7 @@ input[type=radio] { position: absolute; opacity: 0; pointer-events: none; }
   font: inherit; font-family: Georgia, serif; padding: 7px 0; background: transparent; color: var(--crema);
   border: 1px solid var(--laton); cursor: pointer;
 }
-.hora:hover:not(:disabled) { background: #23395a; }
+.hora:hover:not(:disabled):not(.on) { background: #23395a; }
 .hora.on { background: var(--crema); color: var(--marino); }
 .hora:disabled { color: #8d8a80; border-color: #4a5468; text-decoration: line-through; cursor: not-allowed; }
 .nota { color: var(--crema2); margin: 0 0 6px; }

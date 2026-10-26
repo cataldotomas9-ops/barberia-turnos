@@ -37,7 +37,7 @@ test('sábado corta a las 14 y domingo no tiene horarios', () => {
 })
 
 test('los ocupados son estables: mismo dato, mismo resultado', () => {
-  assert.equal(barberoOcupado('2026-10-26', 'ramon', '10:00'), barberoOcupado('2026-10-26', 'ramon', '10:00'))
+  assert.equal(barberoOcupado('2026-10-26', 'hugo', '10:00'), barberoOcupado('2026-10-26', 'hugo', '10:00'))
   const a = grilla('2026-10-26', 30, 'nacho')
   const b = grilla('2026-10-26', 30, 'nacho')
   assert.deepEqual(a, b)
@@ -73,7 +73,7 @@ test('faltantes y su texto', () => {
 test('el mensaje trae todos los datos y el link está codificado', () => {
   const datos = { servicio: servicios[2], barbero: barberos[0], fecha: '2026-10-27', hora: '10:30', nombre: ' Leo ' }
   const m = mensaje(datos, negocio)
-  for (const parte of ['Leo', 'Corte y barba', '60 min', '$15.000', 'Ramón', 'martes 27 de octubre', '10:30']) {
+  for (const parte of ['Leo', 'Corte y barba', '60 min', '$15.000', 'Hola, Barbería Rivadavia.', 'Hugo','martes 27 de octubre', '10:30']) {
     assert.ok(m.includes(parte), parte)
   }
   const url = linkWhatsapp(datos, negocio)

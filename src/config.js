@@ -1,10 +1,10 @@
 // Datos del negocio. Para adaptarlo a otra barbería, cambiá solo este archivo.
 export const negocio = {
-  nombre: 'Don Ramón',
+  nombre: 'Barbería Rivadavia',
   telefono: '5491112345678', // número de ejemplo para wa.me
   telefonoVisible: '(291) 455-0187',
-  direccion: 'Alsina 742, Bahía Blanca',
-  referencia: 'A media cuadra de la plaza Rivadavia',
+  direccion: 'Rivadavia 640, Bahía Blanca',
+  referencia: 'Casi esquina Brown',
   desde: 1974,
 }
 
@@ -34,7 +34,7 @@ export const servicios = [
 ]
 
 export const barberos = [
-  { id: 'ramon', nombre: 'Ramón' },
+  { id: 'hugo', nombre: 'Hugo' },
   { id: 'chicho', nombre: 'Chicho' },
   { id: 'nacho', nombre: 'Nacho' },
 ]

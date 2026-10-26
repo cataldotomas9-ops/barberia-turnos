@@ -105,7 +105,7 @@ export function textoFaltantes(lista) {
 export function mensaje({ servicio, barbero, fecha, hora, nombre }, negocio) {
   const quien = barbero ? barbero.nombre : 'el que esté libre'
   return [
-    `Hola, soy ${nombre.trim()}. Quiero sacar un turno en ${negocio.nombre}:`,
+    `Hola, ${negocio.nombre}. Soy ${nombre.trim()} y quiero sacar un turno:`,
     `Servicio: ${servicio.nombre} (${servicio.minutos} min, ${formatoPrecio(servicio.precio)})`,
     `Barbero: ${quien}`,
     `Día: ${etiquetaDia(fecha)}`,

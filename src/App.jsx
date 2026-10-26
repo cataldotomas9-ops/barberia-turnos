@@ -38,7 +38,7 @@ export default function App() {
     <div className="pagina">
       <aside className="cartel">
         <p className="desde">Desde {negocio.desde}</p>
-        <h1>Barbería<br />{negocio.nombre}</h1>
+        <h1>{negocio.nombre.split(' ')[0]}<br />{negocio.nombre.split(' ').slice(1).join(' ')}</h1>
         <p className="bajada">Corte, barba y charla. Sacá el turno acá y se confirma por WhatsApp.</p>
 
         <h2>Horarios</h2>
